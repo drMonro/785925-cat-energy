@@ -1,0 +1,108 @@
+.forms__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.forms__slogan {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.forms__set {
+  border: none;
+}
+
+.forms__set--border {
+  border-bottom: 1px #ececec solid;
+}
+
+.forms__label {
+  display: block;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.forms__input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.forms__input:-moz-placeholder {
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.forms__weight-options,
+.forms__extra-options {
+  list-style-type: none;
+  position: relative;
+}
+
+.forms__radio {
+  text-transform: uppercase;
+}
+
+.forms__input-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 0;
+  top: -5px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.forms__input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 9px;
+  top: 4px;
+  border: 1px solid $accent;
+  background-color: $accent;
+  border-radius: 50%;
+}
+
+.forms__input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 0;
+  top: -5px;
+  border: 1px solid #cdcdcd;
+}
+
+.forms__input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 5px;
+  top: 0;
+}
+
+.forms__legend {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.forms__letter {
+  resize: none;
+  width: 100%;
+  min-height: 150px;
+}
+
+.forms__required {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+}

@@ -1,8 +1,12 @@
 .teaser {
-  //background-color: #6AB447;
+  //background-color: $accent;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.teaser__wrapper {
+  margin-bottom: 22px;
 }
 
 .teaser__title {
@@ -16,7 +20,6 @@
 .teaser__slogan {
   color: #ffffff;
   display: block;
-  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -25,5 +28,4 @@
 
 .teaser__img {
   display: block;
-  margin: 0 auto;
 }
