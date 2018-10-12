@@ -12,10 +12,10 @@
 
 .forms__set {
   border: none;
-}
 
-.forms__set--border {
-  border-bottom: 1px #ececec solid;
+  &--border {
+    border-bottom: 1px #ececec solid;
+  }
 }
 
 .forms__label {

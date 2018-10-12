@@ -25,20 +25,20 @@
 
 .compare__img {
   display: none;
-}
 
-.compare__img:nth-child(1) {
-  background-image: url("../img/before-mobile@1x.png");
-  background-repeat: no-repeat;
-  width: 311px;
-  height: 240px;
-}
+  &:nth-child(1) {
+    background-image: url("../img/before-mobile@1x.png");
+    background-repeat: no-repeat;
+    width: 311px;
+    height: 240px;
+  }
 
-.compare__img:nth-child(2) {
-  background-image: url("../img/after-mobile@1x.png");
-  background-repeat: no-repeat;
-  width: 251px;
-  height: 240px;
+  &:nth-child(2) {
+    background-image: url("../img/after-mobile@1x.png");
+    background-repeat: no-repeat;
+    width: 251px;
+    height: 240px;
+  }
 }
 
 .compare__cat input:nth-child(1):checked ~ .compare__list .compare__img:nth-child(1) {

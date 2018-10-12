@@ -15,37 +15,37 @@
   line-height: 37.02px;
   display: inline-block;
   padding-left: 69px;
-}
 
-.categories__title::before {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: $accent;
-}
+  &::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $accent;
+  }
 
-.categories__title--losing::after {
-  position: absolute;
-  content: " ";
-  top: -2px;
-  left: 10px;
-  width: 35px;
-  height: 49px;
-  background: url("../img/icon-cat-slim.svg") no-repeat;
-}
+  &--losing::after {
+    position: absolute;
+    content: " ";
+    top: -2px;
+    left: 10px;
+    width: 35px;
+    height: 49px;
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+  }
 
-.categories__title--weight::after {
-  position: absolute;
-  content: " ";
-  top: 15px;
-  left: -10px;
-  width: 67px;
-  height: 28px;
-  background: url("../img/icon-cat-pro.svg") no-repeat;
+  &--weight::after {
+    position: absolute;
+    content: " ";
+    top: 15px;
+    left: -10px;
+    width: 67px;
+    height: 28px;
+    background: url("../img/icon-cat-pro.svg") no-repeat;
+  }
 }
 
 .categories__description {
@@ -60,24 +60,24 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
-}
 
-.categories__link:active {
-  opacity: 0.3;
-}
+  &:active {
+    opacity: 0.3;
+  }
 
-.categories__link::after {
-  position: absolute;
-  content: " ";
-  top: 7px;
-  right: -30px;
-  width: 24px;
-  height: 11px;
-  background: url("../img/icon-right-arrow-long.svg") no-repeat;
-}
+  &::after {
+    position: absolute;
+    content: " ";
+    top: 7px;
+    right: -30px;
+    width: 24px;
+    height: 11px;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  }
 
-.categories__link:hover::after {
-  background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
-  width: 33px;
-  right: -39px;
+  &:hover::after {
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    width: 33px;
+    right: -39px;
+  }
 }
