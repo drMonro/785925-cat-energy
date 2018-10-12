@@ -76,7 +76,7 @@
   background: url("../img/icon-right-arrow-long.svg") no-repeat;
 }
 
-.categories__link:hover:after {
+.categories__link:hover::after {
   background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
   width: 33px;
   right: -39px;
