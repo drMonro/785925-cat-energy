@@ -1,0 +1,39 @@
+.extra__title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  border-bottom: 1px #ececec solid;
+}
+
+.extra__list {
+  list-style-type: none;
+}
+
+.extra__item {
+  padding-bottom: 20px;
+  border-bottom: 1px #ececec solid;
+}
+
+.extra__item-title {
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.extra__description {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.extra__gift-background {
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center 65px, center center;
+  width: 280px;
+  height: 289px;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+}

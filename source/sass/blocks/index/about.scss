@@ -1,0 +1,31 @@
+.about__box--inner {
+  background-color: #f1f1f1;
+}
+
+.about__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.about__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.about__map-wrapper {
+  position: relative;
+}
+
+.about__iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.about__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

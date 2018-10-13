@@ -1,0 +1,36 @@
+.catalog__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 60px;
+  border-bottom: 1px #ececec solid;
+}
+
+.catalog__item-title {
+  text-transform: uppercase;
+  color: $black;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__table-data {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+.catalog__more-action {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__more-description {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+}
