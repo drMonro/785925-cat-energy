@@ -29,3 +29,47 @@
   left: 0;
   z-index: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: auto;
+  }
+
+  .about__box {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about__title {
+    width: 180px;
+  }
+
+  .about__iframe {
+    width: 100%;
+    min-height: 396px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    max-width: 1440px;
+    position: relative;
+  }
+
+  //.about__map-wrapper {
+  //  width: 1440px;
+  //}
+
+  .about__box {
+    background-color: #ffffff;
+    z-index: 5;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 76px;
+    padding-right: 90px;
+    width: 570px;
+    height: 201px;
+  }
+}

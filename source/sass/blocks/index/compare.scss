@@ -2,9 +2,56 @@
   background-color: #f1f1f1;
 }
 
+.compare__cat {
+  display: flex;
+  flex-direction: column;
+}
+
+.compare__controls {
+  margin: 0 auto;
+  order: 4;
+}
+
 .compare__title {
   font-size: 36px;
   line-height: 60px;
+}
+
+.compare__total-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.compare__total {
+  text-align: center;
+  min-width: 122px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+
+  &::before {
+    width: 70px;
+    content: attr(data-text) " ";
+    position: absolute;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 12px;
+    top: 62px;
+    left: 30px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+}
+
+.compare__badge {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 12px;
 }
 
 .compare__description {
@@ -13,7 +60,9 @@
 }
 
 .compare__money {
-  display: block;
+  margin-top: 20px;
+  text-align: center;
+  //display: block;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -21,6 +70,8 @@
 
 .compare__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .compare__img {
@@ -29,15 +80,17 @@
   &:nth-child(1) {
     background-image: url("../img/before-mobile@1x.png");
     background-repeat: no-repeat;
-    width: 311px;
+    width: auto;
     height: 240px;
+    background-position: center;
   }
 
   &:nth-child(2) {
     background-image: url("../img/after-mobile@1x.png");
     background-repeat: no-repeat;
-    width: 251px;
+    width: auto;
     height: 240px;
+    background-position: center;
   }
 }
 
@@ -47,4 +100,53 @@
 
 .compare__cat input:nth-child(2):checked ~ .compare__list .compare__img:nth-child(2) {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .compare {
+    width: auto;
+    background-color: transparent;
+  }
+
+  .compare__total-wrapper {
+    justify-content: space-between;
+  }
+
+  .compare__cat {
+    background-color: #f1f1f1;
+  }
+
+  .compare__total {
+    font-size: 30px;
+    line-height: 37.02px;
+  }
+
+  .compare__money {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .compare {
+    max-width: 1300px;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  .compare__desktop-wrapper--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .compare__desktop-wrapper {
+    width: 450px;
+  }
+
+  .compare__cat {
+    width: 650px;
+  }
+
+  .compare__total-wrapper {
+    width: 365px;
+  }
 }
