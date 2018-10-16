@@ -49,6 +49,13 @@
     width: 100%;
     min-height: 396px;
   }
+
+  .about__box--inner {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 201px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -57,11 +64,8 @@
     position: relative;
   }
 
-  //.about__map-wrapper {
-  //  width: 1440px;
-  //}
-
-  .about__box {
+  .about__box,
+  .about__box--inner {
     background-color: #ffffff;
     z-index: 5;
     position: absolute;

@@ -7,6 +7,8 @@
 
 .extra__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .extra__item {
@@ -36,4 +38,53 @@
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    width: auto;
+  }
+
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
+    border: none;
+  }
+
+  .extra__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__gift {
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    box-sizing: border-box;
+    max-width: 1300px;
+  }
+
+  .extra__list {
+    width: 895px;
+  }
+
+  .extra__item {
+    display: flex;
+  }
+
+  .extra__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__item-wrapper {
+    width: 695px;
+  }
+
+  .extra__purchase {
+    width: auto;
+  }
 }
