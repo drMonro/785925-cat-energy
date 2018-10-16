@@ -9,7 +9,7 @@
 <body>
 <header class="page-header">
 
-  <div class="page-header__logo-decor page-header__logo-wrapper container-mobile">
+  <div class="page-header__logo-decor page-header__logo-wrapper container">
     <a href="index.html">
       <img class="page-header__logo" src="img/logo-mobile.svg" width="190" height="37" alt="Питание для котов «Cat Energy»">
     </a>
@@ -17,7 +17,7 @@
       <img class="page-header__toggle" src="img/icon-mobile-menu.svg" width="24" height="18" alt="Открыть меню">
     </a>
   </div>
-  <nav class="page-header__nav container-mobile--full">
+  <nav class="page-header__nav container--full">
     <ul class="page-header__list page-header__site-list">
       <li class="page-header__item page-header__item-wrapper">
         <a class="page-header__item-link" href="index.html">Главная</a>
@@ -35,8 +35,8 @@
 
 <main class="page-main">
 
-  <h1 class="catalog__title container-mobile">Каталог продукции</h1>
-  <section class="catalog container-mobile">
+  <h1 class="catalog__title container">Каталог продукции</h1>
+  <section class="catalog container">
     <div class="catalog__wrapper">
       <div class="catalog__item">
         <a href="#"><img class="catalog__item-img" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г"></a>
@@ -194,48 +194,58 @@
     </div>
   </section>
 
-  <section class="extra container-mobile">
+  <section class="extra container">
     <h2 class="extra__title">Дополнительные товары</h2>
-    <ul class="extra__list">
-      <li class="extra__item">
-        <span class="extra__item-title">Сахарозаменитель</span>
-        <div class="extra__description">
-          <span class="extra__description-left">1 упаковка (100 г)</span>
-          <span class="extra__description-right">100 Р.</span>
-        </div>
-        <a href="#" class="button extra__purchase">Заказать</a>
-      </li>
-      <li class="extra__item">
-        <span class="extra__item-title">Питьевая вода</span>
-        <div class="extra__description">
-          <span class="extra__description-left">5 литров</span>
-          <span class="extra__description-right">50 Р.</span>
-        </div>
-        <a href="#" class="button extra__purchase">Заказать</a>
-      </li>
-      <li class="extra__item">
-        <span class="extra__item-title">Молоко</span>
-        <div class="extra__description">
-          <span class="extra__description-left">1 литр</span>
-          <span class="extra__description-right">100 Р.</span>
-        </div>
-        <a href="#" class="button extra__purchase">Заказать</a>
-      </li>
-      <li class="extra__item">
-        <span class="extra__item-title">Витамины</span>
-        <div class="extra__description">
-          <span class="extra__description-left">1 упаковка (30 г)</span>
-          <span class="extra__description-right">300 Р.</span>
-        </div>
-        <a href="#" class="button extra__purchase">Заказать</a>
-      </li>
-    </ul>
-    <p class="extra__gift extra__gift-background">Закажите все и получите чехол для кота в подарок!</p>
+    <div class="extra__wrapper">
+      <ul class="extra__list">
+        <li class="extra__item">
+          <div class="extra__item-wrapper">
+            <span class="extra__item-title">Сахарозаменитель</span>
+            <div class="extra__description">
+              <span class="extra__description-left">1 упаковка (100 г)</span>
+              <span class="extra__description-right">100 Р.</span>
+            </div>
+          </div>
+          <a href="#" class="button extra__purchase">Заказать</a>
+        </li>
+        <li class="extra__item">
+          <div class="extra__item-wrapper">
+            <span class="extra__item-title">Питьевая вода</span>
+            <div class="extra__description">
+              <span class="extra__description-left">5 литров</span>
+              <span class="extra__description-right">50 Р.</span>
+            </div>
+          </div>
+          <a href="#" class="button extra__purchase">Заказать</a>
+        </li>
+        <li class="extra__item">
+          <div class="extra__item-wrapper">
+            <span class="extra__item-title">Молоко</span>
+            <div class="extra__description">
+              <span class="extra__description-left">1 литр</span>
+              <span class="extra__description-right">100 Р.</span>
+            </div>
+          </div>
+          <a href="#" class="button extra__purchase">Заказать</a>
+        </li>
+        <li class="extra__item">
+          <div class="extra__item-wrapper">
+            <span class="extra__item-title">Витамины</span>
+            <div class="extra__description">
+              <span class="extra__description-left">1 упаковка (30 г)</span>
+              <span class="extra__description-right">300 Р.</span>
+            </div>
+          </div>
+          <a href="#" class="button extra__purchase">Заказать</a>
+        </li>
+      </ul>
+      <p class="extra__gift extra__gift-background">Закажите все и получите чехол для кота в подарок!</p>
+    </div>
   </section>
 
-  <section class="about container-mobile--full">
+  <section class="about container--full">
     <h2 class="visually-hidden">Местонахождение компании питания для котов «Cat Energy»</h2>
-    <div class="about__box--inner container-mobile">
+    <div class="about__box--inner container">
       <span class="about__title">Приглашаем к сотрудничеству дилеров!</span>
       <span class="about__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
     </div>
@@ -247,7 +257,7 @@
 
 </main>
 
-<footer class="page-footer container-mobile">
+<footer class="page-footer container">
   <a href="index.html">
     <img class="page-footer__logo" src="img/logo-footer.svg" width="127" height="23" alt="Питание для котов «Cat Energy»">
   </a>

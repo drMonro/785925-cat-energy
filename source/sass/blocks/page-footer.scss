@@ -35,3 +35,31 @@
   line-height: 16px;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+
+  .page-footer__social-links {
+    margin: 0;
+  }
+
+  .page-footer__mentor-link {
+    width: 162px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    max-width: 1440px;
+    padding: 0 80px;
+  }
+}

@@ -19,9 +19,19 @@
 }
 
 .forms__label {
-  display: block;
+  position: relative;
+  display: flex;
   color: #222222;
   text-transform: uppercase;
+  white-space: nowrap;
+
+  &--before {
+    padding-left: 50px;
+  }
+}
+
+.forms__input {
+  width: 100%;
 }
 
 .forms__input::-webkit-input-placeholder {
@@ -38,10 +48,19 @@
 .forms__extra-options {
   list-style-type: none;
   position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.forms__weight-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .forms__radio {
   text-transform: uppercase;
+  padding-left: 30px;
+  position: relative;
 }
 
 .forms__input-radio + label::before {
@@ -105,4 +124,54 @@
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .forms__title,
+  .forms__slogan,
+  .forms__set,
+  .forms__submit-wrapper {
+    width: auto;
+  }
+
+  .forms__set--border {
+    border: none;
+  }
+
+  .forms__weight-options {
+    border: 1px solid #ededed;
+  }
+
+  .forms__extra-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .forms__wrapper {
+    min-width: 340px;
+    padding-bottom: 20px;
+  }
+
+  .forms__submit-wrapper {
+    display: flex;
+  }
+
+  .forms__submit {
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .forms__title,
+  .forms__slogan,
+  .forms__set,
+  .forms__submit-wrapper {
+    max-width: 1300px;
+    box-sizing: border-box;
+    padding: 0 40px;
+  }
+
+  .forms__wrapper {
+    min-width: 300px;
+  }
 }

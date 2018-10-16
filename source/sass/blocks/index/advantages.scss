@@ -5,9 +5,48 @@
 
 .advantages__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: auto;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__description {
+    width: 320px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    max-width: 1300px;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__description {
+    width: 245px;
+  }
 }

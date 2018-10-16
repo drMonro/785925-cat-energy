@@ -28,3 +28,51 @@
 .teaser__img {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .teaser {
+    width: auto;
+    background-image: none;
+  }
+
+  .teaser__title {
+    font-size: 60px;
+    line-height: 60px;
+    width: 427px;
+    text-align: left;
+    color: $black;
+  }
+
+  .teaser__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-align: left;
+  }
+
+  .teaser__button {
+    position: relative;
+    top: -250px;
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .teaser {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .teaser__button {
+    position: static;
+  }
+
+  .teaser__img {
+    position: absolute;
+    top: 0;
+    left: 600px;
+  }
+}
