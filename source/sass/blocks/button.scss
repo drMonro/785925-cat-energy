@@ -39,17 +39,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  //.button {
-  //  line-height: 20px;
-  //  font-size: 20px;
-  //  padding: 16px 27px;
-  //}
-}
 
 @media (min-width: $desktop-width) {
   .button--more-items {
     padding: 10px 20px;
-
   }
 }

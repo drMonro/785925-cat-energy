@@ -34,17 +34,6 @@
   margin-bottom: 3px;
 }
 
-
-//@media (max-width: $tablet-width-only) and (min-width: $mobile-width-only) {
-//  .teaser__button {
-//    position: absolute;
-//    top: 252px;
-//    width: auto;
-//    margin-left: 90px;
-//    padding: 16px 27px;
-//  }
-//}
-
 @media (min-width: $tablet-width) {
   .teaser {
     width: auto;
@@ -122,5 +111,4 @@
     width: 552px;
     height: 499px;
   }
-
 }

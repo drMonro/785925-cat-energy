@@ -50,8 +50,6 @@
   .about__address br {
     display: none;
   }
-
-
 }
 
 @media (max-width: $tablet-width-only) and (min-width: $mobile-width-only) {
@@ -63,8 +61,6 @@
       margin-bottom: 0;
     }
   }
-
-
 }
 
 @media (min-width: $tablet-width) {
@@ -129,6 +125,7 @@
     width: 570px;
     height: 201px;
   }
+
   .about__box--inner {
     top: 295px;
   }
