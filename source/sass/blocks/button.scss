@@ -5,10 +5,11 @@
   box-sizing: border-box;
   display: inline-block;
   width: 100%;
-  padding: 8px 42px;
+  padding: 10px 42px;
   text-align: center;
   text-transform: uppercase;
   border: none;
+  min-height: 40px;
 
   &:hover,
   &:focus {
@@ -22,6 +23,10 @@
   &--more-items {
     background-color: #f2f2f2;
     color: #444444;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 42px;
+    margin-bottom: 24px;
 
     &:hover,
     &:focus {
@@ -31,5 +36,20 @@
     &:active {
       color: rgba(68, 68, 68, 0.3);
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  //.button {
+  //  line-height: 20px;
+  //  font-size: 20px;
+  //  padding: 16px 27px;
+  //}
+}
+
+@media (min-width: $desktop-width) {
+  .button--more-items {
+    padding: 10px 20px;
+
   }
 }

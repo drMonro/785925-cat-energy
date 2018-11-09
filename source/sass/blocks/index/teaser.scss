@@ -9,6 +9,8 @@
 }
 
 .teaser__title {
+  margin: 0;
+  padding-top: 27px;
   color: #ffffff;
   font-weight: normal;
   font-size: 36px;
@@ -23,16 +25,45 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+  margin-top: 25px;
+  margin-bottom: 28px;
 }
 
 .teaser__img {
   display: block;
+  margin-bottom: 3px;
 }
+
+
+//@media (max-width: $tablet-width-only) and (min-width: $mobile-width-only) {
+//  .teaser__button {
+//    position: absolute;
+//    top: 252px;
+//    width: auto;
+//    margin-left: 90px;
+//    padding: 16px 27px;
+//  }
+//}
 
 @media (min-width: $tablet-width) {
   .teaser {
     width: auto;
     background-image: none;
+  }
+
+  .teaser__button {
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 252px;
+    width: auto;
+    margin-left: 90px;
+    padding: 16px 27px;
+  }
+
+  .teaser__wrapper {
+    position: relative;
+    margin-bottom: 0;
   }
 
   .teaser__title {
@@ -41,6 +72,8 @@
     width: 427px;
     text-align: left;
     color: $black;
+    padding-left: 87px;
+    padding-top: 23px;
   }
 
   .teaser__slogan {
@@ -48,14 +81,15 @@
     line-height: 20px;
     color: $black;
     text-align: left;
+    padding-left: 88px;
+    margin-top: 42px;
+    margin-bottom: 19px;
   }
 
-  .teaser__button {
-    position: relative;
-    top: -250px;
-    width: auto;
-    font-size: 20px;
-    line-height: 20px;
+  .teaser__img {
+    margin: 0 auto 0 auto;
+    height: 609px;
+    width: 709px;
   }
 }
 
@@ -64,15 +98,29 @@
     position: relative;
     max-width: 1300px;
     margin: 0 auto;
+    padding-left: 90px;
+    min-height: 601px;
   }
 
   .teaser__button {
-    position: static;
+    top: 334px;
+  }
+
+  .teaser__title {
+    padding-top: 100px;
+  }
+
+  .teaser__slogan {
+    margin-top: 41px;
+    margin-bottom: 53px;
   }
 
   .teaser__img {
     position: absolute;
-    top: 0;
-    left: 600px;
+    top: 26px;
+    left: 574px;
+    width: 552px;
+    height: 499px;
   }
+
 }

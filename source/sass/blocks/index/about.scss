@@ -1,8 +1,5 @@
-.about__box--inner {
-  background-color: #f1f1f1;
-}
-
 .about__title {
+  width: 140px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -11,13 +8,19 @@
 .about__address {
   font-family: "Arial", sans-serif;
   font-size: 14px;
+  width: 140px;
+  line-height: 20px;
 }
 
 .about__map-wrapper {
+  margin: 0;
+  padding: 0;
+  height: 362px;
   position: relative;
 }
 
 .about__iframe {
+  height: 362px;
   position: relative;
   z-index: 2;
   border: none;
@@ -28,6 +31,40 @@
   top: 0;
   left: 0;
   z-index: 1;
+  height: 362px;
+}
+
+.about__box {
+  padding-top: 28px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26px;
+}
+
+.about__box--inner {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: $mobile-width-only) {
+  .about__address br {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: $tablet-width-only) and (min-width: $mobile-width-only) {
+  .about__box {
+    padding-top: 64px;
+    margin-bottom: 30px;
+
+    &--inner {
+      margin-bottom: 0;
+    }
+  }
+
+
 }
 
 @media (min-width: $tablet-width) {
@@ -35,14 +72,18 @@
     width: auto;
   }
 
-  .about__box {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
   .about__title {
     width: 180px;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 40px;
+  }
+
+  .about__address {
+    text-align: right;
+    font-size: 16px;
+    width: 160px;
+    padding-right: 42px;
   }
 
   .about__iframe {
@@ -50,30 +91,53 @@
     min-height: 396px;
   }
 
+  .about__map {
+    height: 396px;
+
+    &-wrapper {
+      height: 396px;
+    }
+  }
+
   .about__box--inner {
     width: auto;
     display: flex;
     justify-content: space-between;
-    min-height: 201px;
+    min-height: 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    max-width: 1440px;
+    max-width: 100%;
     position: relative;
+    margin-top: -201px;
   }
 
   .about__box,
   .about__box--inner {
     background-color: #ffffff;
     z-index: 5;
-    position: absolute;
+    position: relative;
+    top: 352px;
+    left: -325px;
     box-sizing: border-box;
     padding: 0;
-    padding-left: 76px;
-    padding-right: 90px;
+    padding-top: 65px;
+    padding-left: 35px;
+    padding-right: 42px;
     width: 570px;
     height: 201px;
+  }
+  .about__box--inner {
+    top: 295px;
+  }
+
+  .about__address {
+    text-align: left;
+  }
+
+  .about__iframe {
+    min-height: 399px;
   }
 }
