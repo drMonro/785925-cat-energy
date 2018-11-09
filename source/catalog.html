@@ -4,26 +4,25 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
-<header class="page-header">
-
-  <div class="page-header__logo-decor page-header__logo-wrapper container">
+<header class="page-header page-header--inner page-header--closed page-header--nojs">
+  <div class="page-header__logo-decor container">
     <a href="index.html">
-      <img class="page-header__logo" src="img/logo-mobile.svg" width="190" height="37" alt="Питание для котов «Cat Energy»">
+      <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Питание для котов «Cat Energy»">
     </a>
-    <a>
-      <img class="page-header__toggle" src="img/icon-mobile-menu.svg" width="24" height="18" alt="Открыть меню">
-    </a>
+    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
   </div>
+
   <nav class="page-header__nav container--full">
     <ul class="page-header__list page-header__site-list">
       <li class="page-header__item page-header__item-wrapper">
-        <a class="page-header__item-link" href="index.html">Главная</a>
+        <a class="page-header__item-link"  href="index.html">Главная</a>
       </li>
-      <li class="page-header__item page-header__item-wrapper ">
-        <a class="page-header__item-link page-header__item-link--active" href="catalog.html">Каталог продукции</a>
+      <li class="page-header__item page-header__item-wrapper">
+        <a class="page-header__item-link page-header__item-link--active">Каталог продукции</a>
       </li>
       <li class="page-header__item page-header__item-wrapper">
         <a class="page-header__item-link" href="form.html">Подбор программы</a>
@@ -189,7 +188,7 @@
         <a href="#" class="catalog__plus-toggle" aria-label="Ещё товары"></a>
         <span class="catalog__more-action">Показать еще 100500 товаров</span>
         <span class="catalog__more-description">На самом деле вкусов гораздо больше!</span>
-        <a href="#" class="button catalog__more-items button--more-items">Показать все</a>
+        <a href="#" class="button button--more-items">Показать все</a>
       </div>
     </div>
   </section>
@@ -203,7 +202,7 @@
             <span class="extra__item-title">Сахарозаменитель</span>
             <div class="extra__description">
               <span class="extra__description-left">1 упаковка (100 г)</span>
-              <span class="extra__description-right">100 Р.</span>
+              <span class="extra__description-right">200 Р.</span>
             </div>
           </div>
           <a href="#" class="button extra__purchase">Заказать</a>
@@ -239,15 +238,15 @@
           <a href="#" class="button extra__purchase">Заказать</a>
         </li>
       </ul>
-      <p class="extra__gift extra__gift-background">Закажите все и получите чехол для кота в подарок!</p>
+      <p class="extra__gift extra__gift-wrapper">Закажите все<br>и получите чехол для кота в подарок!</p>
     </div>
   </section>
 
   <section class="about container--full">
     <h2 class="visually-hidden">Местонахождение компании питания для котов «Cat Energy»</h2>
-    <div class="about__box--inner container">
-      <span class="about__title">Приглашаем к сотрудничеству дилеров!</span>
-      <span class="about__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+    <div class="about__box about__box--inner container">
+      <span class="about__title">Приглашаем<br>к сотрудничеству дилеров!</span>
+      <span class="about__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</span>
     </div>
     <p class="about__map-wrapper">
       <iframe class="about__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.617893802097!2d30.321353747356934!3d59.938733577666554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538721085941" width="320" height="400" frameborder="0" allowfullscreen></iframe>
@@ -258,26 +257,28 @@
 </main>
 
 <footer class="page-footer container">
-  <a href="index.html">
+  <div class="page-footer__wrapper">
     <img class="page-footer__logo" src="img/logo-footer.svg" width="127" height="23" alt="Питание для котов «Cat Energy»">
-  </a>
-  <ul class="page-footer__social-links site-links">
-    <li class="site-links__item">
-      <a href="#" aria-label="Наш ВКонтакте"><img src="img/icon-vk-mobile.svg" width="22" height="12" alt="Страница в ВКонтакте компании питания для котов «Cat Energy»"></a>
-    </li>
-    <li class="site-links__item">
-      <a href="#" aria-label="Наш Инстаграм"><img src="img/icon-insta-mobile.svg" width="16" height="16" alt="Страница в Instagram компании питания для котов «Cat Energy»"></a>
-    </li>
-    <li class="site-links__item">
-      <a href="#" aria-label="Наш Фейсбук"><img src="img/icon-fb-mobile.svg" width="10" height="19" alt="Страница в Facebook компании питания для котов «Cat Energy»"></a>
-    </li>
-  </ul>
-  <a class="page-footer__mentor-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-    <span class="page-footer__mentor-link">HTML Academy</span>
-    <img class="" src="img/htmlacademy.svg" width="26" height="34" alt="Страница HTML Академии">
-  </a>
 
+    <ul class="page-footer__social-links site-links">
+      <li class="site-links__item">
+        <a href="#" aria-label="Наш ВКонтакте"><img src="img/icon-vk-mobile.svg" width="22" height="12" alt="Страница в ВКонтакте компании питания для котов «Cat Energy»"></a>
+      </li>
+      <li class="site-links__item">
+        <a href="#" aria-label="Наш Инстаграм"><img src="img/icon-insta-mobile.svg" width="16" height="16" alt="Страница в Instagram компании питания для котов «Cat Energy»"></a>
+      </li>
+      <li class="site-links__item">
+        <a href="#" aria-label="Наш Фейсбук"><img src="img/icon-fb-mobile.svg" width="10" height="19" alt="Страница в Facebook компании питания для котов «Cat Energy»"></a>
+      </li>
+    </ul>
+    <a class="page-footer__mentor-block" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+      <span class="page-footer__mentor-link">HTML Academy</span>
+      <img class="" src="img/htmlacademy.svg" width="26" height="34" alt="Страница HTML Академии">
+    </a>
+  </div>
 </footer>
+
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
