@@ -56,15 +56,27 @@
   }
 }
 
+.compare__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+}
+
 .compare__img {
   display: none;
 
   &:nth-child(1) {
     background-image: url("../img/before-mobile@1x.png");
     background-repeat: no-repeat;
-    width: auto;
+    width: 320px;
     height: 240px;
     background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-mobile@2x.png");
+      background-size: 320px auto;
+    }
   }
 
   &:nth-child(2) {
@@ -73,6 +85,11 @@
     width: auto;
     height: 240px;
     background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-mobile@2x.png");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -186,11 +203,10 @@
   margin-bottom: 25px;
 }
 
-.compare__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 34px;
+@media (max-width: $mobile-width-only) {
+  .compare__list {
+    margin-left: -20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -200,7 +216,7 @@
     margin-top: -31px;
     border-top: 1px solid #e5e5e5;
     padding-top: 43px;
-    background-image: linear-gradient(to bottom, #ffffff 60%, transparent 40%), linear-gradient(to right, #f1f1f1 50%, #e9e9e9 50%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 54.5%, transparent 54.5%, transparent), linear-gradient(to right, #f1f1f1 50%, #e9e9e9 50%);
   }
 
   .compare__title {
@@ -220,6 +236,7 @@
   .compare__total-wrapper {
     flex-wrap: nowrap;
     align-items: center;
+    margin-bottom: 90px;
   }
 
   .compare__total {
@@ -266,9 +283,27 @@
   }
 
   .compare__img:nth-child(1) {
-    width: 545px;
+    width: 690px;
     height: 517px;
     margin: 0 auto;
+    background-image: url("../img/before-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png");
+      background-size: 690px auto;
+    }
+  }
+
+  .compare__img:nth-child(2) {
+    width: 690px;
+    height: 517px;
+    margin: 0 auto;
+    background-image: url("../img/after-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png");
+      background-size: 690px auto;
+    }
   }
 
   .compare__switcher {
