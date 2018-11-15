@@ -1,5 +1,6 @@
 .categories {
-  width: auto;
+  width: 87.5%;
+  margin: 0 auto 17px;
 }
 
 .categories__item {
@@ -91,7 +92,7 @@
 
 @media (max-width: $mobile-width-only) {
   .categories__item-wrapper:last-child {
-    margin-bottom: 19px;
+    margin-bottom: 18px;
   }
 
   .categories__description br {
@@ -127,7 +128,7 @@
   }
 
   .categories__description {
-    width: 380px;
+    width: 343px;
   }
 
   .categories__item-wrapper {
@@ -153,6 +154,7 @@
     width: 92%;
     max-width: 1300px;
     margin: 0 auto;
+    margin-top: 628px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -188,6 +190,7 @@
     justify-content: space-between;
     padding: 0 40px;
     box-sizing: border-box;
+    margin-top: -50px;
     margin-bottom: 52px;
   }
 
