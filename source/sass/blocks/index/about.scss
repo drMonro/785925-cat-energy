@@ -1,3 +1,8 @@
+.about {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .about__title {
   width: 140px;
   font-size: 16px;
@@ -13,13 +18,15 @@
 }
 
 .about__map-wrapper {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
   height: 362px;
   position: relative;
 }
 
 .about__iframe {
+  width: 100%;
   height: 362px;
   position: relative;
   z-index: 2;
@@ -27,6 +34,8 @@
 }
 
 .about__map {
+  width: 100%;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,30 +45,41 @@
 
 .about__box {
   padding-top: 28px;
-  width: auto;
+  padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 26px;
+  width: 87.5%;
+  margin: 0 auto;
 }
 
-.about__box--inner {
-  background-color: #f1f1f1;
+.about__address-wrapper {
+  width: 139px;
+  //padding-right: 20px;
+  text-align: left;
+  margin-top: -3px;
 }
 
 @media (max-width: $mobile-width-only) {
   .about__address br {
     display: none;
   }
+
+  .about--inner {
+    background-color: #f1f1f1;
+  }
 }
 
 @media (max-width: $tablet-width-only) and (min-width: $mobile-width-only) {
+  .about--inner {
+    margin-bottom: 0;
+    background-color: #f1f1f1;
+  }
+
   .about__box {
     padding-top: 64px;
-    margin-bottom: 30px;
-
-    &--inner {
-      margin-bottom: 0;
-    }
+    margin-bottom: 5px;
+    height: 195px;
+    box-sizing: border-box;
   }
 }
 
@@ -68,18 +88,32 @@
     width: auto;
   }
 
+  .about__box {
+    width: 92.5%;
+    padding-top: 65px;
+  }
+
   .about__title {
     width: 180px;
     font-size: 20px;
     line-height: 25px;
-    padding-left: 40px;
+    padding-left: 42px;
+  }
+
+  .about__address-wrapper {
+    width: 160px;
+    padding-right: 42px;
+    text-align: right;
+    margin-top: -3px;
   }
 
   .about__address {
-    text-align: right;
     font-size: 16px;
-    width: 160px;
-    padding-right: 42px;
+
+    &--city {
+      line-height: 57px;
+      padding-top: 10px;
+    }
   }
 
   .about__iframe {
@@ -94,13 +128,6 @@
       height: 396px;
     }
   }
-
-  .about__box--inner {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    min-height: 110px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -110,12 +137,11 @@
     margin-top: -201px;
   }
 
-  .about__box,
-  .about__box--inner {
+  .about__box {
     background-color: #ffffff;
     z-index: 5;
     position: relative;
-    top: 352px;
+    top: 295px;
     left: -325px;
     box-sizing: border-box;
     padding: 0;
@@ -126,11 +152,7 @@
     height: 201px;
   }
 
-  .about__box--inner {
-    top: 295px;
-  }
-
-  .about__address {
+  .about__address-wrapper {
     text-align: left;
   }
 

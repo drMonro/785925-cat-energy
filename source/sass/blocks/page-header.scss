@@ -1,6 +1,14 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.page-header__desktop {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .page-header__logo {
@@ -16,12 +24,14 @@
   }
 }
 
-.page-header__logo-decor {
+.page-header__logo-wrapper {
+  padding: 0 20px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: none;
-  height: 65px;
+  height: 66px;
   border-bottom: #e5e5e5 1px solid;
 }
 
@@ -147,10 +157,25 @@
     }
   }
 
+  .page-header__desktop {
+    display: flex;
+    width: 100%;
+  }
+
+  .page-header__logo {
+    width: 173px;
+  }
+
   .page-header__logo-decor {
     border: none;
     margin: 0;
     padding-right: 0;
+  }
+
+  .page-header__logo-wrapper {
+    border: none;
+    width: auto;
+    padding-left: 30px;
   }
 
   .page-header__nav {
@@ -172,6 +197,10 @@
     border: none;
   }
 
+  .page-header__item-link {
+    padding-bottom: 5px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -180,25 +209,31 @@
 @media (min-width: $desktop-width) {
   .page-header {
     position: relative;
-    max-width: 1300px;
     margin: 0 auto;
     padding-top: 52px;
 
     &::after {
       position: absolute;
       content: " ";
-      right: -69px;
+      right: 0;
       top: 0;
-      width: 720px;
+      width: 50%;
       height: 696px;
-      z-index: -1;
-      background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+      z-index: -20;
+      background: #67a648 url("../img/index-background-desktop@1x.jpg") no-repeat right;
+      background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 720px auto;
+        background: #67a648 url("../img/index-background-desktop@2x.jpg") no-repeat right;
+        background-size: cover;
       }
     }
+  }
+
+  .page-header__desktop {
+    display: flex;
+    width: 1300px;
+    //margin: 0 auto;
   }
 
   .page-header__list--index {
@@ -206,18 +241,34 @@
       color: #ffffff;
     }
 
+    & a:hover,
+    a:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    & a:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
     & .page-header__item-link--active {
       border-color: #ffffff;
     }
   }
 
-  .page-header__logo-decor {
+  .page-header__logo {
+    width: 202px;
+    height: 59px;
+  }
+
+  .page-header__logo-wrapper {
     padding-left: 40px;
+    width: 60%;
   }
 
   .page-header__nav {
     width: 479px;
     padding-right: 40px;
+    margin: 0;
   }
 
   .page-header__item-link {

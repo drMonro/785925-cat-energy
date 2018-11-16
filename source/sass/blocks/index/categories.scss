@@ -1,5 +1,6 @@
 .categories {
-  width: auto;
+  width: 87.5%;
+  margin: 0 auto 17px;
 }
 
 .categories__item {
@@ -67,6 +68,8 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
+  min-width: 90px;
+  display: inline-block;
 
   &:active {
     opacity: 0.3;
@@ -75,8 +78,8 @@
   &::after {
     position: absolute;
     content: " ";
-    top: 7px;
-    right: -35px;
+    top: 2px;
+    right: -30px;
     width: 24px;
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
@@ -91,7 +94,7 @@
 
 @media (max-width: $mobile-width-only) {
   .categories__item-wrapper:last-child {
-    margin-bottom: 19px;
+    margin-bottom: 18px;
   }
 
   .categories__description br {
@@ -127,7 +130,7 @@
   }
 
   .categories__description {
-    width: 380px;
+    width: 343px;
   }
 
   .categories__item-wrapper {
@@ -137,10 +140,6 @@
     padding-top: 76px;
     padding-bottom: 60px;
     margin-bottom: 30px;
-
-    //&--smaller-padding {
-    //  padding-right: 313px;
-    //}
 
     &:last-child {
       margin-bottom: 45px;
@@ -153,9 +152,38 @@
     width: 92%;
     max-width: 1300px;
     margin: 0 auto;
+    //margin-top: 628px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .categories__title {
+    position: static;
+    font-size: 36px;
+    line-height: 37.02px;
+
+    &--losing::after {
+      right: 91px;
+      left: auto;
+      top: 80px;
+    }
+
+    &--weight::after {
+      right: 28px;
+      left: auto;
+      top: 135px;
+    }
+
+    &::before {
+      right: 60px;
+      left: auto;
+      top: 93px;
+    }
+  }
+
+  .categories__item-wrapper {
+    position: relative;
   }
 
   .categories__description {
@@ -165,19 +193,19 @@
     margin-bottom: 35px;
   }
 
-  .categories__title {
-    font-size: 36px;
-    line-height: 37.02px;
-  }
-
   .categories__link {
+    min-width: 108px;
     font-size: 20px;
     line-height: 20px;
 
     &::after {
-      top: 9px;
-      right: -48px;
+      top: 3px;
+      right: -44px;
     }
+  }
+
+  .categories__link:hover::after {
+    right: -53px;
   }
 }
 
@@ -185,15 +213,17 @@
   .categories {
     width: 1300px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
+    justify-content: flex-start;
     box-sizing: border-box;
+    margin-top: 54px;
     margin-bottom: 52px;
   }
 
   .categories__item {
     width: 570px;
     box-sizing: border-box;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
   .categories__item-wrapper {
@@ -204,6 +234,7 @@
   }
 
   .categories__title {
+    position: relative;
     padding-left: 162px;
     margin-bottom: 58px;
 
@@ -228,6 +259,7 @@
       height: 100px;
     }
   }
+
 
   .categories__description {
     margin-bottom: 9px;
