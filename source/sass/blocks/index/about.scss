@@ -132,17 +132,20 @@
 
 @media (min-width: $desktop-width) {
   .about {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     position: relative;
-    margin-top: -201px;
+    //margin-top: -201px;
   }
 
   .about__box {
+    order: 3;
     background-color: #ffffff;
+    position: absolute;
     z-index: 5;
-    position: relative;
-    top: 295px;
-    left: -325px;
+    left: 110px;
+    top: 95px;
     box-sizing: border-box;
     padding: 0;
     padding-top: 65px;
