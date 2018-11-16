@@ -257,6 +257,10 @@
       box-shadow: 0 0 5px 2px rgba(0, 150, 255, 0.2);
     }
   }
+
+  .compare__range {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -376,7 +380,8 @@
     }
   }
 
-  .compare__switcher {
+  .compare__switcher--1,
+  .compare__switcher--2 {
     display: none;
   }
 
