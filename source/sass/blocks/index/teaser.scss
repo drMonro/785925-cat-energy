@@ -32,10 +32,6 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 4px;
-
-  //@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //  background-image: url("../img/index-can-mobile@2x.png");
-  //  background-size: 280px auto;
 }
 
 .teaser__button {
@@ -49,7 +45,7 @@
     position: relative;
 
     &::before {
-      content: "";
+      content: " ";
       position: absolute;
       top: 0;
       right: 0;
@@ -65,29 +61,43 @@
 @media (min-width: $tablet-width) {
   .teaser {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
     background-image: none;
   }
 
   .teaser__button {
+    order: 3;
     font-size: 20px;
     line-height: 20px;
-    position: absolute;
-    top: 229px;
-    width: auto;
+
+    width: 38%;
     padding: 16px 27px;
+    margin: 0;
   }
 
   .teaser__wrapper {
     position: relative;
     margin-bottom: 0;
     padding-left: 119px;
+    min-height: 833px;
+
+    & picture {
+      width: 709px;
+      order: 4;
+      position: absolute;
+      top: 225px;
+      left: 30px;
+      z-index: -10;
+    }
   }
 
   .teaser__title-wrapper {
     margin: 0;
     padding-top: 0;
-    margin-top: 51px;
+    margin-top: 23px;
   }
 
   .teaser__title {
@@ -104,15 +114,15 @@
     color: $black;
     text-align: left;
     margin-top: 42px;
-    margin-bottom: 19px;
+    margin-bottom: 47px;
   }
 
   .teaser__img {
-    position: absolute;
+    //position: absolute;
+    //z-index: -10;
     width: 709px;
     height: 609px;
-    left: 30px;
-    margin-bottom: 0;
+    //left: 30px;
   }
 }
 
@@ -125,12 +135,18 @@
     min-height: 601px;
   }
 
-  .teaser__button {
-    top: 283px;
+  .teaser__title-wrapper {
+    margin-top: 100px;
   }
 
-  .teaser__title {
-    padding-top: 49px;
+  .teaser__wrapper picture {
+    width: 552px;
+    top: 50px;
+    left: 0;
+  }
+
+  .teaser__button {
+    width: 246px;
   }
 
   .teaser__slogan {

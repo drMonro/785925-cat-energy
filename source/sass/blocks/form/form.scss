@@ -86,15 +86,50 @@
   }
 }
 
+.forms__contacts-wrapper input {
+  padding-right: 49px;
+}
+
+.forms__icon {
+  position: absolute;
+  right: 16px;
+  top: 15px;
+
+  &--phone {
+    right: 13px;
+    top: 14px;
+  }
+}
+
 .forms__input {
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   &--wrapper {
     padding: 12px;
     margin-left: 13px;
     height: 45px;
     box-sizing: border-box;
+  }
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid #ff8985;
+  }
+
+  &--e-mail:focus + .forms__icon {
+    fill: $accent;
+  }
+
+  &--e-mail:focus:invalid + .forms__icon {
+    fill: #ff8985;
   }
 }
 
@@ -132,7 +167,7 @@
 }
 
 .forms__input-radio + label::before {
-  content: "";
+  content: " ";
   position: absolute;
   width: 28px;
   height: 28px;
@@ -142,8 +177,21 @@
   border-radius: 50%;
 }
 
+.forms__input-radio:hover + label::before,
+.forms__input-radio:focus + label::before {
+  border-color: #ededed;
+}
+
+.forms__input-radio:focus + label::before {
+  box-shadow: 0 0 5px 2px rgba(0, 150, 255, 0.5);
+}
+
+.forms__input-radio:focus + label {
+  opacity: 0.3;
+}
+
 .forms__input-radio:checked + label::after {
-  content: "";
+  content: " ";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -165,7 +213,7 @@
 }
 
 .forms__input-checkbox:checked + label::after {
-  content: "";
+  content: " ";
   position: absolute;
   width: 21px;
   height: 16px;
@@ -256,31 +304,33 @@
   margin-bottom: 40px;
 }
 
-@media (max-width: $mobile-width-only) {
-  //.forms__set--border::before {
-  //  position: absolute;
-  //  bottom: 0;
-  //  left: -20px;
-  //  content: " ";
-  //  width: 320px;
-  //  height: 1px;
-  //  background-color: #ececec;
-  //}
+.forms__input-checkbox:hover + label::before {
+  border-color: #bababa;
 }
+
+.forms__input-checkbox:active + label {
+  opacity: 0.3;
+}
+
 
 @media (max-width: $tablet-width-only) and (min-width: $mobile-width-only) {
   .forms {
     padding-top: 23px;
     margin-bottom: 72px;
-
-    & > *:not(:first-child) {
-      //padding-left: 50px;
-      //padding-right: 37px;
-    }
   }
 }
 
 @media (min-width: $tablet-width) {
+  .forms__icon {
+    right: 22px;
+    top: 21px;
+
+    &--phone {
+      right: 18px;
+      top: 17px;
+    }
+  }
+
   .forms__input {
     height: 52px;
 

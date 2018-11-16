@@ -1,9 +1,6 @@
 .page-header {
   display: flex;
   flex-direction: column;
-}
-
-.page-header__wrapper {
   width: 100%;
   margin: 0 auto;
   align-items: center;
@@ -222,12 +219,13 @@
       top: 0;
       width: 50%;
       height: 696px;
-      z-index: -1;
+      z-index: -20;
       background: #67a648 url("../img/index-background-desktop@1x.jpg") no-repeat right;
+      background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: contain;
+        background: #67a648 url("../img/index-background-desktop@2x.jpg") no-repeat right;
+        background-size: cover;
       }
     }
   }
@@ -241,6 +239,15 @@
   .page-header__list--index {
     & a {
       color: #ffffff;
+    }
+
+    & a:hover,
+    a:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    & a:active {
+      color: rgba(255, 255, 255, 0.3);
     }
 
     & .page-header__item-link--active {
