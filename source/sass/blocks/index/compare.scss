@@ -34,6 +34,11 @@
 .compare__pin:active {
   border: 2px solid $accent;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+
+  &::after {
+    //background-color: red;
+    left: 38%;
+  }
 }
 
 .compare__controls {

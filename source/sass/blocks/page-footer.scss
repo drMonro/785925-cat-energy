@@ -49,6 +49,10 @@
   fill: #68b738;
 }
 
+.page-footer__link-focus:active .page-footer__link-svg {
+  fill: rgba(104, 183, 156, 0.3);
+}
+
 .page-footer__link-svg {
   fill: #666666;
   position: relative;
