@@ -136,7 +136,12 @@
     flex-direction: column;
     max-width: 100%;
     position: relative;
-    //margin-top: -201px;
+  }
+
+  .about__box-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .about__box {
@@ -144,7 +149,6 @@
     background-color: #ffffff;
     position: absolute;
     z-index: 5;
-    left: 110px;
     top: 95px;
     box-sizing: border-box;
     padding: 0;
@@ -153,6 +157,7 @@
     padding-right: 42px;
     width: 570px;
     height: 201px;
+    margin-left: 0;
   }
 
   .about__address-wrapper {
