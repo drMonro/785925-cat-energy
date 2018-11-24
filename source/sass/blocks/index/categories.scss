@@ -103,6 +103,10 @@
 }
 
 @media (max-width: $tablet-width-only) and (min-width: $mobile-width-only) {
+  .categories {
+    width: 92.5%;
+  }
+
   .categories__title {
     padding-left: 0;
     margin-bottom: 9px;
@@ -143,11 +147,7 @@
     padding-right: 280px;
     padding-top: 76px;
     padding-bottom: 60px;
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 45px;
-    }
+    margin-bottom: 29px;
   }
 }
 
