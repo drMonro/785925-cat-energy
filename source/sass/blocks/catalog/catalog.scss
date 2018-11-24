@@ -111,6 +111,7 @@
 }
 
 .catalog__table-data {
+  display: block;
   padding: 0;
   border-collapse: collapse;
   font-size: 12px;
@@ -219,7 +220,7 @@
   }
 
   .catalog__item-img {
-    width: 340px;
+    width: 324px;
     //height: 208px;
   }
 
@@ -367,6 +368,10 @@
     & > a:first-child {
       width: 245px;
     }
+  }
+
+  .catalog__item-img {
+    width: 245px;
   }
 
   .catalog__item-info {

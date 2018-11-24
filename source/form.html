@@ -58,13 +58,13 @@
       <div class="forms__application-wrapper">
         <fieldset class="forms__set forms__set--main">
           <label class="forms__label">Имя:*
-            <input type="text" name="name" class="forms__input forms__input--wrapper" placeholder="Барсик" required="">
+            <input type="text" name="name" class="forms__input forms__input-wrapper" placeholder="Барсик" required="">
           </label>
           <label class="forms__label">Вес (кг):*
-            <input type="text" name="weight" class="forms__input forms__input--wrapper" placeholder="7">
+            <input type="text" name="weight" class="forms__input forms__input-wrapper" placeholder="7">
           </label>
           <label class="forms__label">Возраст (лет):
-            <input type="text" name="age" class="forms__input forms__input--wrapper" placeholder="7">
+            <input type="text" name="age" class="forms__input forms__input-wrapper" placeholder="7">
           </label>
         </fieldset>
 
@@ -94,13 +94,13 @@
         </div>
         <div class="forms__contacts-wrapper">
           <label class="forms__label forms__label-mail">E-mail:*
-            <input type="email" name="e-mail" class="forms__input forms__input--wrapper forms__input--e-mail" placeholder="kuklachev@gmail.com" required="">
+            <input type="email" name="e-mail" class="forms__input forms__input-wrapper forms__input--e-mail" placeholder="kuklachev@gmail.com" required="">
             <svg class="forms__icon forms__icon--email" width="17" height="13">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </label>
           <label class="forms__label forms__label-phone">Телефон:*
-            <input type="tel" name="phone-number" class="forms__input forms__input--wrapper forms__input--phone" placeholder="8 (960) 900-60-90" required="">
+            <input type="tel" name="phone-number" class="forms__input forms__input-wrapper forms__input--phone" placeholder="8 (960) 900-60-90" required="">
             <svg class="forms__icon forms__icon--phone" width="20" height="20">
               <use xlink:href="#icon-phone"></use>
             </svg>
@@ -156,8 +156,8 @@
         </div>
       </div>
     </div>
-    <p class="about__map-wrapper">
-      <iframe class="about__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.617893802097!2d30.321353747356934!3d59.938733577666554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538721085941" width="320" height="362" allowfullscreen=""></iframe>
+    <div class="about__map-wrapper">
+      <p id="map" class="about__iframe"></p>
       <picture>
         <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -166,7 +166,7 @@
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
         <img class="about__map" src="img/bg-map-mobile@1x.png" width="320" height="400" srcset="img/bg-map-mobile@2x.png 2x" alt="Местонахождение компании питания для котов «Cat Energy»">
       </picture>
-    </p>
+    </div>
   </section>
 
 </main>
@@ -208,6 +208,7 @@
 </footer>
 
 <script src="js/scripts.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLmaqyUE-6OVcrE7xp1stac7ZiVdyzVo0&callback=initMap"></script>
 
 </body>
 </html>

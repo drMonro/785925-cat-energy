@@ -60,11 +60,8 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .advantages__description--time br {
-    display: none;
-  }
-}
+//@media (max-width: $mobile-width-only) {
+//}
 
 @media (min-width: $tablet-width) {
   .advantages {
@@ -87,14 +84,15 @@
   }
 
   .advantages__description {
+    box-sizing: border-box;
     font-size: 16px;
     line-height: 24px;
-    width: 260px;
+    width: 324px;
     padding-left: 0;
     padding-top: 113px;
     padding-right: 64px;
     min-height: 100px;
-    margin-bottom: 104px;
+    margin-bottom: 132px;
 
     &::before {
       width: 80px;

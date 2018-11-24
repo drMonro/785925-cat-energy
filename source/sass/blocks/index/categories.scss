@@ -131,10 +131,14 @@
 
   .categories__description {
     width: 343px;
+
+    &--long {
+      width: 373px;
+    }
   }
 
   .categories__item-wrapper {
-    width: 53%;
+    width: 49%;
     padding-left: 52px;
     padding-right: 280px;
     padding-top: 76px;
@@ -149,13 +153,14 @@
 
 @media (min-width: $tablet-width) {
   .categories {
-    width: 92%;
+    //width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
+    //margin: 0 auto;
     //margin-top: 628px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .categories__title {
@@ -183,6 +188,7 @@
   }
 
   .categories__item-wrapper {
+    width: 100%;
     position: relative;
   }
 
