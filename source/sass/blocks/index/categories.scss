@@ -153,10 +153,7 @@
 
 @media (min-width: $tablet-width) {
   .categories {
-    //width: 100%;
     max-width: 1300px;
-    //margin: 0 auto;
-    //margin-top: 628px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
